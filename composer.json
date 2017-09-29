@@ -1,0 +1,29 @@
+{
+  "name": "dhl/module-shipping-handover-m2",
+  "version": "0.1.0",
+  "license": "OSL-3.0",
+  "type": "magento2-module",
+  "description": "DHL business customer shipping handover extension for Magento",
+  "require": {
+    "php": "~5.6.5|7.0.2|7.0.4|~7.0.6",
+    "dhl/module-shipping-m2": "dev-master"
+  },
+  "authors":[
+    {
+      "name":"Max Melzer",
+      "email":"max.melzer@netresearch.de"
+    },
+    {
+      "name": "Andreas Müller",
+      "email": "andreas.mueller@netresearch.de"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Dhl\\ShippingHandover\\": ""
+    }
+  }
+}
