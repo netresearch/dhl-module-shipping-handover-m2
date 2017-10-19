@@ -98,7 +98,8 @@ Run the following commands from your project root directory to install *DHL Ship
 
 ::
 
-    composer config repositories.module-shipping-handover-m2 vcs https://github.com/netresearch/module-shipping-handover-m2.git
+    composer config repositories.module-shipping-handover-m2
+    vcs https://github.com/netresearch/module-shipping-handover-m2.git
 
 ::
 
@@ -213,7 +214,5 @@ In case of questions or problems, please have a look at the Support Portal (FAQ)
 
     http://dhl.support.netresearch.de/
 
-.. admonition:: Contacting Support
-
-    If the problem cannot be resolved, you can contact the support team via the Support Portal or by sending an email to ``dhl.support@netresearch.de``.
+If the problem cannot be resolved, you can contact the support team via the Support Portal or by sending an email to ``dhl.support@netresearch.de``.
 
