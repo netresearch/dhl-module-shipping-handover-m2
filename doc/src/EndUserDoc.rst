@@ -213,6 +213,7 @@ In case of questions or problems, please have a look at the Support Portal (FAQ)
 
     http://dhl.support.netresearch.de/
 
-.. admonition::
+.. admonition:: Contacting Support
 
     If the problem cannot be resolved, you can contact the support team via the Support Portal or by sending an email to ``dhl.support@netresearch.de``.
+
