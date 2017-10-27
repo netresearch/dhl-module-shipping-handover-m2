@@ -5,7 +5,7 @@ The DHL Shipping Handover extension for Magento® 2 adds handover note capabilit
 
 Facts
 -----
-* version: 0.1.0
+* version: 1.0.0
 
 Description
 -----------
@@ -28,7 +28,7 @@ Installation Instructions
 ### Obtain Sources ###
 Run the following commands in your project root directory:
 
-    composer config repositories.module-shipping-handover-m2 vcs https://github.com/netresearch/module-shipping-handover-m2.git
+    composer config repositories.module-shipping-handover-m2 vcs https://github.com/netresearch/dhl-module-shipping-handover-m2.git
     composer require dhl/module-shipping-handover-m2
 
 ### Enable Module ###
@@ -49,15 +49,6 @@ To unregister the shipping module from the application, run the following comman
 
     ./bin/magento module:uninstall --remove-data Dhl_ShippingHandover
     composer remove dhl/module-shipping-handover-m2
-
-Support
--------
-In case of questions or problems, please have a look at the
-[Support Portal (FAQ)](http://dhl.support.netresearch.de/) first.
-
-If the issue cannot be resolved, you can contact the support team via the
-[Support Portal](http://dhl.support.netresearch.de/) or by sending an email
-to <dhl.support@netresearch.de>.
 
 Developer
 ---------
