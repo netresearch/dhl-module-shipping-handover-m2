@@ -5,7 +5,7 @@ The DHL Shipping Handover extension for Magento® 2 adds handover note capabilit
 
 Facts
 -----
-* version: 1.0.0
+* version: 1.0.1
 
 Description
 -----------
