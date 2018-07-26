@@ -1,0 +1,42 @@
+image: php:7.0-cli
+
+stages:
+  - build
+  - validate
+
+variables:
+  MODULE_VERSION: "1.0.0"
+  MODULE_NAME: "DHL_ShippingHandover"
+
+before_script:
+  - bash build/docker/install.sh > /dev/null
+
+package:
+  stage: build
+  only:
+  - master
+  script:
+  - mkdir ./doc
+  - rst2pdf -v -b 1
+            -o doc/${MODULE_NAME}_Doc.pdf
+            -s build/doc/src/dhl.style
+            build/doc/src/EndUserDoc.rst
+  - zip -r
+        ${MODULE_NAME}-${MODULE_VERSION}.zip
+        .
+        -x "build/*"
+  artifacts:
+      when: on_success
+      name: ${MODULE_NAME}-${MODULE_VERSION}-artifact
+      paths:
+      - ${MODULE_NAME}-${MODULE_VERSION}.zip
+
+validate:
+  stage: validate
+  only:
+  - master
+  script:
+  - ls -la
+  - php /usr/local/bin/m2eval ${MODULE_NAME}-${MODULE_VERSION}.zip
+  dependencies:
+  - package
